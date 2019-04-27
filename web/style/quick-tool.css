@@ -1,0 +1,73 @@
+/* <meta name="viewport" content="width=1000, user-scalable=0, initial-scale=1, maximum-scale=1, minimum-scale=1" /> */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono|ZCOOL+KuaiLe');
+* { box-sizing: border-box; }
+html, body {
+  position: fixed; display: flex;
+  left: 0px; right: 0px; top: 0px; bottom: 0px;
+  margin: 0px; padding: 0px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #202020 0%, #404840 25%, #202020 50%, #404840 75%, #202020 100%);
+  background-size: 100%;
+}
+main, body > section, body > .layout {
+  margin: 0px; padding: 35px;
+  border: 5px solid white;
+  border-radius: 35px;
+  background: white;
+  background-image: linear-gradient(90deg, #F8FFF8 0%, transparent 25%, transparent 75%,#F8FFF8 100%),
+                    linear-gradient(0deg, #F8FFF8 0%, transparent 25%, transparent 75%,#F8FFF8 100%);
+  width: 80vw; height: 40vw;
+  max-width: 90%;  max-height: 90%;
+  box-shadow: inset 0px 0px 10px 0px #404040, 0px 0px 5px -2px black;
+}
+section, main, .layout {
+  position: relative; display: flex;
+  flex-direction: column;
+  justify-content: flex-start; align-items: stretch;
+  overflow: hidden;
+}
+section > *, main > *, .layout > * {
+  position: relative; display: block;
+  margin: 0px; padding: 0px;
+  flex-grow: 0;
+}
+section > article, main > article, .layout > article
+section > .content, main > .content, .layout > .content {
+  overflow: auto;
+  flex-grow: 1;
+}
+header { margin-bottom: 10px; }
+footer { margin-top: 10px; }
+form {
+  display: block; position: relative;
+  margin: 0px; padding: 0px;
+  text-align: right;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px; padding: 0px;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-weight: 900;
+  color: #FFD0D0;
+  text-align: center;
+  text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black,
+               0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black,
+               0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
+}
+button {
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-size: 18px;
+  color: white;
+  text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black,
+               0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black,
+               0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
+  padding: 5px 15px; margin: 0px 5px;
+  border: 2px solid black;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%);
+}
+button.continue { background: linear-gradient(to bottom, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); }
+button.cancel { background: linear-gradient(to bottom, #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); }
+button:active, button:focus { outline: none; }
+button:active { box-shadow: inset 0px 0px 7px -2px black; }
+button:disabled { background:linear-gradient(to bottom, #D0D8D0 0%,#D0D8D0 50%,#B8C0B8 51%,#B0B8B0 100%);}
