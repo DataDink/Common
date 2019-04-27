@@ -1,1 +1,1 @@
-(https://datadink.github.io/Common/web/style/quick-tool.css)
+https://datadink.github.io/Common/web/style/quick-tool.css
